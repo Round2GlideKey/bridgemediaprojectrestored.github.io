@@ -1,5 +1,6 @@
 (function(){
   var D={ru:{
+    skip:'К основному содержимому',
     nav_ch:'Каналы',nav_about:'О холдинге',nav_arc:'Архив',nav_news:'Новости',nav_con:'Контакты',
     home_h:'Project Restored',home_p:'Фанатский проект по восстановлению музыкальных каналов и истории холдинга BRIDGE MEDIA.',
     btv_t:'BRIDGE TV',btv_p:'Зарубежная популярная музыка всех времён и направлений. Сейчас в эфире.',btv_b:'Перейти на сайт',
@@ -16,6 +17,7 @@
     c_h:'Контакты',c_sub:'Где нас найти.',
     f:'Представлено командой BM-PR. Не имеет отношения к BRIDGE MEDIA.'
   },en:{
+    skip:'Skip to main content',
     nav_ch:'Channels',nav_about:'About',nav_arc:'Archive',nav_news:'News',nav_con:'Contacts',
     home_h:'Project Restored',home_p:'A fan project restoring the music channels and the history of the BRIDGE MEDIA group.',
     btv_t:'BRIDGE TV',btv_p:'Popular international music of all times and genres. On air now.',btv_b:'Open the site',
@@ -64,7 +66,9 @@
     var d=D[L];
     document.documentElement.lang=L;
     document.querySelectorAll('[data-i]').forEach(function(e){var v=d[e.getAttribute('data-i')];if(v)e.textContent=v});
-    document.querySelectorAll('.lang button').forEach(function(b){b.classList.toggle('on',b.dataset.l===L)});
+    document.querySelectorAll('.lang button').forEach(function(b){var active=b.dataset.l===L;b.classList.toggle('on',active);b.setAttribute('aria-pressed',String(active))});
+    document.querySelectorAll('.top nav a').forEach(function(a){if(a.classList.contains('on'))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
+    var menuButton=document.querySelector('.burger');if(menuButton){var opened=menuButton.getAttribute('aria-expanded')==='true';menuButton.setAttribute('aria-label',L==='en'?(opened?'Close menu':'Open menu'):(opened?'Закрыть меню':'Открыть меню'))}
     var t=document.getElementById('tl');
     if(t)t.innerHTML=HIST.map(function(h){return '<li><div class="y">'+h[0]+'</div><ul>'+h[1][L].map(function(x){return '<li style="padding:0;margin:0 0 4px;list-style:disc">'+esc(x)+'</li>'}).join('')+'</ul></li>'}).join('');
     var a=document.getElementById('arc');
@@ -82,7 +86,12 @@
   document.addEventListener('DOMContentLoaded',function(){
     document.querySelectorAll('.lang button').forEach(function(b){b.onclick=function(){setLang(b.dataset.l)}});
     var bg=document.querySelector('.burger'),nv=document.querySelector('.top nav');
-    if(bg)bg.onclick=function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',o)};
+    if(bg&&nv){
+      function closeMenu(){nv.classList.remove('open');bg.setAttribute('aria-expanded','false');bg.setAttribute('aria-label',document.documentElement.lang==='en'?'Open menu':'Открыть меню')}
+      bg.onclick=function(){var o=nv.classList.toggle('open');bg.setAttribute('aria-expanded',String(o));bg.setAttribute('aria-label',document.documentElement.lang==='en'?(o?'Close menu':'Open menu'):(o?'Закрыть меню':'Открыть меню'))};
+      nv.querySelectorAll('a').forEach(function(a){a.addEventListener('click',closeMenu)});
+      document.addEventListener('keydown',function(e){if(e.key==='Escape')closeMenu()});
+    }
     render(lang());
   });
 })();
