@@ -1,19 +1,21 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="studio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101820">
 <title>BRIDGE MEDIA: Project Restored</title>
-<meta name="description" content="Фанатский проект BM-PR: BRIDGE TV, RUSONG TV и восстановленная история BRIDGE MEDIA.">
+<meta name="description" content="Фанатский проект BM-PR: BRIDGE TV, RUSONG TV, BRIDGE HD и восстановленная история BRIDGE MEDIA.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="BRIDGE MEDIA: Project Restored">
-<meta property="og:description" content="Музыкальные телеканалы и архив истории BRIDGE MEDIA — проект команды BM-PR.">
+<meta property="og:description" content="Фанатский проект BM-PR: BRIDGE TV, RUSONG TV, BRIDGE HD и восстановленная история BRIDGE MEDIA.">
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="fonts.css">
-<link rel="stylesheet" href="bm.css?v=2">
+<link rel="stylesheet" href="bm.css?v=3">
+<link rel="stylesheet" href="themes.css?v=3">
+<script>try{var q=location.search.match(/[?&]theme=(\w+)/),t=(q&&q[1])||localStorage.getItem('bmtheme');if(/^(studio|paper|air|clean)$/.test(t))document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
 <body class="home-page">
 <a class="skip" href="#main" data-i="skip">К основному содержимому</a>
@@ -38,7 +40,7 @@
  </div>
 </header>
 <main id="main">
- <h1 class="sr-only">BRIDGE MEDIA: Project Restored</h1>
+<h1 class="sr-only">BRIDGE MEDIA: Project Restored</h1>
  <section class="cols home-cols" aria-label="Проекты BRIDGE MEDIA: Project Restored">
   <a class="col c-btv" href="https://btvrestored.ru/" target="_blank" rel="noopener noreferrer">
    <span class="panel-badge"><span class="status-dot"></span><span data-i="live">В эфире</span></span>
@@ -60,13 +62,13 @@
    </div>
    <span class="panel-number" aria-hidden="true">02</span>
   </a>
-  <a class="col c-arc" href="archive.html">
-   <span class="panel-badge" data-i="arch">Архив</span>
+  <a class="col c-hd" href="bridge-hd.html">
+   <span class="panel-badge" data-i="soon">Скоро</span>
    <div class="panel-content">
-    <span class="archive-mark" aria-hidden="true">BRIDGE<span>MEDIA</span></span>
-    <h2 data-i="arc_t">Архив холдинга</h2>
-    <p data-i="arc_p">DANGE TV, TOPSONG TV, BRIDGEBERG, BRIDGE PRODUCTION и BRIDGE DIGITAL.</p>
-    <span class="go" data-i="arc_b">Открыть архив</span>
+    <img class="lg" src="img/bridge-hd-logo.png" alt="Логотип BRIDGE HD" width="342" height="56">
+    <h2 data-i="hd_t">BRIDGE HD</h2>
+    <p data-i="hd_p">Музыкальный канал в формате HD. Проект восстановления — скоро.</p>
+    <span class="go" data-i="hd_b">О канале</span>
    </div>
    <span class="panel-number" aria-hidden="true">03</span>
   </a>
@@ -74,8 +76,9 @@
 </main>
 <footer class="home-footer">
  <span data-i="f">Представлено командой BM-PR. Не имеет отношения к BRIDGE MEDIA.</span>
+ <div class="themes" role="group" aria-label="Стиль"><button type="button" data-t="studio"></button><button type="button" data-t="paper"></button><button type="button" data-t="air"></button><button type="button" data-t="clean"></button></div>
  <span class="footer-mark">BM-PR</span>
 </footer>
-<script src="bm.js?v=2"></script>
+<script src="bm.js?v=3"></script>
 </body>
 </html>
