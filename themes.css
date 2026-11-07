@@ -135,3 +135,5 @@ html[data-theme=clean]{--pg-bg:#f4f6f8;--pg-panel:#fff;--pg-card:#fff;--pg-text:
   .inner-page .home-top .top-in{height:68px}
   .inner-page .home-top nav{top:68px}
 }
+.show-btn{display:inline-block;padding:13px 22px;background:var(--accent,#ff6a00);color:#000;font-weight:900;font-size:14px;letter-spacing:.06em;text-transform:uppercase;text-decoration:none}
+.show-btn:hover{filter:brightness(1.1)}

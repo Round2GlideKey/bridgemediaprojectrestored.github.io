@@ -4,7 +4,8 @@
     hd_t:'BRIDGE HD',hd_p:'Музыкальный канал в формате HD. Проект восстановления — скоро.',hd_b:'О канале',
     hd_h:'BRIDGE HD',hd_sub:'Музыкальный телеканал холдинга BRIDGE MEDIA в формате HD. Проект BRIDGE HD: Project Restored готовится к запуску.',
     hd_hist:'История канала',hd_src:'Источники',hd_status:'Скоро',
-    hd_note:'Даты запуска и закрытия — по открытым источникам; точная дата запуска BRIDGE HD в них не указана. Рабочее название BRIDGEBERG указано по данным команды проекта: архивная страница bridgemedia.ru лишь сообщала о проекте «скоро». Проект неофициальный.',
+    hd_show:'Шоукейс BRIDGE HD',hd_show_b:'Смотреть на VK Видео',hd_show_t:'Видео-шоукейс канала на VK Видео.',
+    hd_note:'Даты запуска и закрытия — по открытым источникам; точная дата запуска BRIDGE HD в них не указана. О прежнем названии BRIDGEBERG сообщает Telepedia: «Первоначально планировался под названием „BridgeBerg“». Это неофициальный проект.',
     theme:'Стиль',th_studio:'Единый',th_paper:'Концепт',th_air:'Эфир',th_clean:'Светлый',
     nav_ch:'Каналы',nav_about:'О холдинге',nav_arc:'Архив',nav_news:'Новости',nav_con:'Контакты',
     home_h:'Project Restored',home_p:'Фанатский проект по восстановлению музыкальных каналов и истории холдинга BRIDGE MEDIA.',
@@ -26,7 +27,8 @@
         hd_t:'BRIDGE HD',hd_p:'The HD music channel. The restoration project is coming soon.',hd_b:'About the channel',
     hd_h:'BRIDGE HD',hd_sub:'The HD music channel of the BRIDGE MEDIA group. BRIDGE HD: Project Restored is getting ready to launch.',
     hd_hist:'Channel history',hd_src:'Sources',hd_status:'Coming soon',
-    hd_note:'Launch and closure dates come from public sources; none gives the exact launch date of BRIDGE HD. The working title BRIDGEBERG is per the project team: the archived bridgemedia.ru page only said “coming soon”. This is an unofficial project.',
+    hd_show:'BRIDGE HD showcase',hd_show_b:'Watch on VK Video',hd_show_t:'The channel showcase video on VK Video.',
+    hd_note:'Launch and closure dates come from public sources; none gives the exact launch date of BRIDGE HD. Telepedia reports the earlier name: “originally planned under the name BridgeBerg”. This is an unofficial project.',
     theme:'Style',th_studio:'Unified',th_paper:'Concept',th_air:'On air',th_clean:'Light',
     nav_ch:'Channels',nav_about:'About',nav_arc:'Archive',nav_news:'News',nav_con:'Contacts',
     home_h:'Project Restored',home_p:'A fan project restoring the music channels and the history of the BRIDGE MEDIA group.',
@@ -75,12 +77,13 @@
   ];
 
   var HDTL=[
-   ['',{ru:'BRIDGEBERG — рабочее название проекта: на архивной странице bridgemedia.ru он значился как «скоро».',en:'BRIDGEBERG — the working title: on the archived bridgemedia.ru page it was listed as “coming soon”.'}],
+   ['',{ru:'Первоначально канал планировался под названием BRIDGEBERG (на архивной странице bridgemedia.ru проект значился как «скоро»).',en:'The channel was originally planned under the name BRIDGEBERG (the archived bridgemedia.ru page listed it as “coming soon”).'}],
    ['2015',{ru:'Запуск BRIDGE HD — музыкального канала в формате HD.',en:'BRIDGE HD, an HD music channel, launches.'}],
    ['2017',{ru:'Январь — лицензия на BRIDGE HD входит в число лицензий группы при покупке 75% BRIDGE MEDIA структурой «Чайка Медиа Груп».',en:'January — the BRIDGE HD licence is among those held by the group when Chaika Media Group buys 75% of BRIDGE MEDIA.'}],
    ['2019',{ru:'3 сентября — на смену BRIDGE HD приходит BRIDGE TV Deluxe («Роскошная музыка мирового класса», HD).',en:'September 3 — BRIDGE TV Deluxe (“Luxury world-class music”, HD) replaces BRIDGE HD.'}]
   ];
   var HDSRC=[
+   ['Bridge HD — Telepedia','https://telepedia.fandom.com/ru/wiki/Bridge_HD'],
    ['BRIDGE MEDIA — каналы','https://bridgetv.ru/about/channels/'],
    ['BRIDGE TV Deluxe заменит BRIDGE HD — bridgetv.ru','https://bridgetv.ru/news/view/bridge-tv-deluxe'],
    ['Bridge Media объявил о запуске канала Bridge TV Deluxe — Cableman','https://www.cableman.ru/content/bridge-media-obyavil-o-zapuske-kanala-bridge-tv-deluxe'],
