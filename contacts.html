@@ -1,30 +1,54 @@
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="studio">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#070707">
+<meta name="theme-color" content="#101820">
 <title>Контакты — BRIDGE MEDIA: Project Restored</title>
-<meta name="description" content="Фанатский проект по восстановлению каналов и истории BRIDGE MEDIA. Неофициальный сайт команды BM-PR.">
-<link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="bm.css?v=2">
+<meta name="description" content="Контакты и ссылки проектов BM-PR.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Контакты — BRIDGE MEDIA: Project Restored">
+<meta property="og:description" content="Контакты и ссылки проектов BM-PR.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="bm.css?v=3">
+<link rel="stylesheet" href="themes.css?v=3">
+<script>try{var q=location.search.match(/[?&]theme=(\w+)/),t=(q&&q[1])||localStorage.getItem('bmtheme');if(/^(studio|paper|air|clean)$/.test(t))document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 </head>
-<body>
-<a class="skip" href="#main">Skip</a>
-<header class="top"><div class="top-in">
- <a class="brand" href="index.html"><b>BRIDGE MEDIA</b><small>Project Restored</small></a>
- <nav id="nav">
-  <a href="index.html" data-i="nav_ch">Каналы</a><a href="about.html" data-i="nav_about">О холдинге</a><a href="archive.html" data-i="nav_arc">Архив</a><a href="news.html" data-i="nav_news">Новости</a><a href="contacts.html" class="on" data-i="nav_con">Контакты</a>
- </nav>
- <div class="lang"><button data-l="ru">RU</button><button data-l="en">EN</button></div>
- <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
-</div></header>
+<body class="inner-page">
+<a class="skip" href="#main" data-i="skip">К основному содержимому</a>
+<header class="top home-top">
+ <div class="top-in">
+  <a class="brand" href="index.html" aria-label="BRIDGE MEDIA: Project Restored — главная">
+   <span class="brand-symbol" aria-hidden="true">BM</span>
+   <span class="brand-copy"><b>BRIDGE MEDIA</b><small>Project Restored</small></span>
+  </a>
+  <nav id="nav" aria-label="Главная навигация">
+   <a href="index.html" data-i="nav_ch">Каналы</a>
+   <a href="about.html" data-i="nav_about">О холдинге</a>
+   <a href="archive.html" data-i="nav_arc">Архив</a>
+   <a href="news.html" data-i="nav_news">Новости</a>
+   <a href="contacts.html" class="on" aria-current="page" data-i="nav_con">Контакты</a>
+  </nav>
+  <div class="lang" aria-label="Язык / Language">
+   <button type="button" data-l="ru" aria-pressed="true">RU</button>
+   <button type="button" data-l="en" aria-pressed="false">EN</button>
+  </div>
+  <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+ </div>
+</header>
 <main id="main">
 <div class="page"><div class="wrap">
 <h1 class="pt" data-i="c_h">Контакты</h1><p class="sub" data-i="c_sub"></p>
 <div class="links" id="contacts"></div>
 </div></div></main>
-<footer data-i="f">Представлено командой BM-PR. Не имеет отношения к BRIDGE MEDIA.</footer>
-<script src="bm.js?v=2"></script>
+<footer class="home-footer">
+ <span data-i="f">Представлено командой BM-PR. Не имеет отношения к BRIDGE MEDIA.</span>
+ <div class="themes" role="group" aria-label="Стиль"><button type="button" data-t="studio"></button><button type="button" data-t="paper"></button><button type="button" data-t="air"></button><button type="button" data-t="clean"></button></div>
+ <span class="footer-mark">BM-PR</span>
+</footer>
+<script src="bm.js?v=3"></script>
 </body>
 </html>

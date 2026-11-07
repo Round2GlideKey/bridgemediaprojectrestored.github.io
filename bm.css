@@ -110,7 +110,7 @@ footer{max-width:1000px;margin:0 auto;padding:22px 28px;background:#fff;border-t
 .home-cols .col:hover::before{transform:scale(1.09)}
 .home-cols .c-btv{--panel-image:url('img/bridgemedia.jpg');--panel-overlay:linear-gradient(180deg,rgba(102,36,0,.54),rgba(120,45,0,.82)),linear-gradient(90deg,rgba(0,0,0,.23),transparent 80%)}
 .home-cols .c-rtv{--panel-image:url('img/topsongtv.jpg');--panel-overlay:linear-gradient(180deg,rgba(11,71,82,.56),rgba(5,88,103,.86)),linear-gradient(90deg,rgba(0,0,0,.18),transparent 80%)}
-.home-cols .c-arc{--panel-image:url('img/bridgeberg.jpg');--panel-overlay:linear-gradient(180deg,rgba(13,24,34,.62),rgba(8,18,27,.88)),linear-gradient(90deg,rgba(0,0,0,.16),transparent 80%)}
+.home-cols .c-hd{--panel-image:url('img/bridgeberg.jpg');--panel-overlay:linear-gradient(180deg,rgba(13,24,34,.62),rgba(8,18,27,.88)),linear-gradient(90deg,rgba(0,0,0,.16),transparent 80%)}
 .panel-badge{position:absolute;top:119px;left:clamp(25px,3.2vw,54px);display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border:1px solid rgba(255,255,255,.48);background:rgba(0,0,0,.16);backdrop-filter:blur(8px);font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
 .status-dot{width:7px;height:7px;border-radius:50%;background:#98e54b;box-shadow:0 0 0 4px rgba(152,229,75,.16)}
 .panel-content{width:100%;max-width:390px;margin:auto 0;align-self:center}
